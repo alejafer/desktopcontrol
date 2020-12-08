@@ -1,0 +1,21 @@
+Create databse parqueadero;
+
+use parqueadero;
+
+Create TABLE tarifas(
+ID INT(10) AUTO_INCREMENT PRIMARY KEY,
+T_minimo int(10) NOT NULL,
+T_max int not null,
+Precio float not null,
+tipo varchar(25) not null
+);
+
+Create TABLE historial(
+ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+FechaInicial date not null,
+FechaFinal date not null,
+Tiempom int not null,
+Precio float not null,
+tipo varchar(25) not null,
+fecha DATE NOT NULL
+);
