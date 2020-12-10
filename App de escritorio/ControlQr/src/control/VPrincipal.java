@@ -68,7 +68,7 @@ public class VPrincipal extends javax.swing.JFrame {
 
         Session sesion = Session.getDefaultInstance(propiedad);
         String correoEnvia = "marlonthe154@gmail.com";
-        String contrasena = "marlonJAJA2";
+        String contrasena = "marlonJAJA3";
         String receptor = correo;
         String asunto = "Codigo Qr";
         String mensaje="Su codigo Qr es:";
@@ -181,11 +181,11 @@ public class VPrincipal extends javax.swing.JFrame {
                 Invitado2.setVisible(true);
                 Consulta.setVisible(false);
             }
-            JOptionPane.showMessageDialog(null, tipoo+ " Encontrado!\n" +
+            JOptionPane.showMessageDialog(null, " Encontrado!\n" +
             "Nombre: "+ Nombre +" "+ Apellido);
         
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "No se encontro ningun usuario" );
+            JOptionPane.showMessageDialog(null, "No se encontró ningún usuario" );
             identificacionvisitante.setText(identificacion1.getText());
             identificacion1.setText("");
             razon();
@@ -220,7 +220,7 @@ public class VPrincipal extends javax.swing.JFrame {
                 st.executeUpdate("INSERT INTO `control`.`usuarios` (`identificacion`, `nombre1`, `nombre2`, `apellido1`, `apellido2`, `correo`, `telefono`, `tarjeta`, `tipousuario_id`, `estado`) VALUES ('"+identificacionvisitante.getText()+"', '"+nombre1visitante.getText()+"', '"+nombre2visitante.getText()+"', '"+apellido1visitante.getText()+"', '"+apellido2visitante.getText()+"', '"+correovisitante.getText()+"', '"+telefonovisitante.getText()+"', '0', '100', '1')");
                
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "Comprueba que los datos este bien!");
+                JOptionPane.showMessageDialog(null, "Comprueba que los datos estén bien!");
 
             }
         }
@@ -332,6 +332,7 @@ public class VPrincipal extends javax.swing.JFrame {
         identificacion4 = new javax.swing.JTextField();
         Nlabeltipo8 = new javax.swing.JLabel();
         NLogo4 = new javax.swing.JLabel();
+        NLogo8 = new javax.swing.JLabel();
         Usuario = new javax.swing.JPanel();
         NLogo2 = new javax.swing.JLabel();
         Titulo = new javax.swing.JLabel();
@@ -343,6 +344,7 @@ public class VPrincipal extends javax.swing.JFrame {
         Nbotonregistrar5 = new javax.swing.JButton();
         identificacion3 = new javax.swing.JTextField();
         Nlabeltipo5 = new javax.swing.JLabel();
+        NLogo7 = new javax.swing.JLabel();
         Invitado = new javax.swing.JPanel();
         NLogo1 = new javax.swing.JLabel();
         Ntitulo1 = new javax.swing.JLabel();
@@ -368,13 +370,15 @@ public class VPrincipal extends javax.swing.JFrame {
         Nlabeltipo7 = new javax.swing.JLabel();
         tarjetavisitante = new javax.swing.JComboBox<>();
         Nlabeltipo14 = new javax.swing.JLabel();
+        NLogo6 = new javax.swing.JLabel();
         Consulta = new javax.swing.JPanel();
-        NLogo = new javax.swing.JLabel();
         Ntitulo = new javax.swing.JLabel();
         NlabelPlaca = new javax.swing.JLabel();
         Nbotonregistrar = new javax.swing.JButton();
         Nbotonregistrar1 = new javax.swing.JButton();
         identificacion1 = new javax.swing.JTextField();
+        NLogo3 = new javax.swing.JLabel();
+        NLogo5 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         Menu = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -664,22 +668,29 @@ public class VPrincipal extends javax.swing.JFrame {
 
         NLogo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/1200px-U._Cooperativa_de_Colombia_logo.svg_.png"))); // NOI18N
 
+        NLogo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/onlinea.png"))); // NOI18N
+
         javax.swing.GroupLayout Invitado2Layout = new javax.swing.GroupLayout(Invitado2);
         Invitado2.setLayout(Invitado2Layout);
         Invitado2Layout.setHorizontalGroup(
             Invitado2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Invitado2Layout.createSequentialGroup()
-                .addGap(791, 791, 791)
                 .addGroup(Invitado2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Invitado2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(Nbotonregistrar7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Nbotonregistrar6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Correo4)
-                        .addComponent(opcion4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Nlabeltipo6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(identificacion4)
-                        .addComponent(NlabelPlaca3, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(Titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(Invitado2Layout.createSequentialGroup()
+                        .addGap(791, 791, 791)
+                        .addGroup(Invitado2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Invitado2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Nbotonregistrar7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Nbotonregistrar6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Correo4)
+                                .addComponent(opcion4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Nlabeltipo6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(identificacion4)
+                                .addComponent(NlabelPlaca3, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(Invitado2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(NLogo8)))
                 .addContainerGap(4838, Short.MAX_VALUE))
             .addGroup(Invitado2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(Invitado2Layout.createSequentialGroup()
@@ -695,7 +706,9 @@ public class VPrincipal extends javax.swing.JFrame {
         Invitado2Layout.setVerticalGroup(
             Invitado2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Invitado2Layout.createSequentialGroup()
-                .addGap(211, 211, 211)
+                .addContainerGap()
+                .addComponent(NLogo8)
+                .addGap(167, 167, 167)
                 .addComponent(Titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(NlabelPlaca3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -737,7 +750,7 @@ public class VPrincipal extends javax.swing.JFrame {
         NlabelPlaca2.setBackground(new java.awt.Color(255, 255, 255));
         NlabelPlaca2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         NlabelPlaca2.setForeground(new java.awt.Color(255, 255, 255));
-        NlabelPlaca2.setText("Identificacion");
+        NlabelPlaca2.setText("Identificación");
 
         Correo3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Correo3.addActionListener(new java.awt.event.ActionListener() {
@@ -787,23 +800,30 @@ public class VPrincipal extends javax.swing.JFrame {
         Nlabeltipo5.setForeground(new java.awt.Color(255, 255, 255));
         Nlabeltipo5.setText("Correo");
 
+        NLogo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/onlinea.png"))); // NOI18N
+
         javax.swing.GroupLayout UsuarioLayout = new javax.swing.GroupLayout(Usuario);
         Usuario.setLayout(UsuarioLayout);
         UsuarioLayout.setHorizontalGroup(
             UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(UsuarioLayout.createSequentialGroup()
-                .addGap(761, 761, 761)
                 .addGroup(UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(Nbotonregistrar5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Nbotonregistrar4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Correo3)
-                        .addComponent(opcion3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Nlabeltipo4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(identificacion3)
-                        .addComponent(NlabelPlaca2, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(Titulo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NLogo2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(UsuarioLayout.createSequentialGroup()
+                        .addGap(761, 761, 761)
+                        .addGroup(UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Nbotonregistrar5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Nbotonregistrar4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Correo3)
+                                .addComponent(opcion3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Nlabeltipo4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(identificacion3)
+                                .addComponent(NlabelPlaca2, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(NLogo2, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(UsuarioLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(NLogo7)))
                 .addGap(6616, 6616, 6616))
             .addGroup(UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(UsuarioLayout.createSequentialGroup()
@@ -814,7 +834,9 @@ public class VPrincipal extends javax.swing.JFrame {
         UsuarioLayout.setVerticalGroup(
             UsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(UsuarioLayout.createSequentialGroup()
-                .addGap(66, 66, 66)
+                .addContainerGap()
+                .addComponent(NLogo7)
+                .addGap(22, 22, 22)
                 .addComponent(NLogo2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -987,6 +1009,8 @@ public class VPrincipal extends javax.swing.JFrame {
         Nlabeltipo14.setForeground(new java.awt.Color(255, 255, 255));
         Nlabeltipo14.setText("Tarjeta");
 
+        NLogo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/onlinea.png"))); // NOI18N
+
         javax.swing.GroupLayout InvitadoLayout = new javax.swing.GroupLayout(Invitado);
         Invitado.setLayout(InvitadoLayout);
         InvitadoLayout.setHorizontalGroup(
@@ -997,7 +1021,9 @@ public class VPrincipal extends javax.swing.JFrame {
                         .addGap(804, 804, 804)
                         .addComponent(Ntitulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(InvitadoLayout.createSequentialGroup()
-                        .addGap(851, 851, 851)
+                        .addContainerGap()
+                        .addComponent(NLogo6)
+                        .addGap(568, 568, 568)
                         .addComponent(NLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(InvitadoLayout.createSequentialGroup()
                         .addGap(616, 616, 616)
@@ -1050,7 +1076,9 @@ public class VPrincipal extends javax.swing.JFrame {
             InvitadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InvitadoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(NLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(InvitadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NLogo6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Ntitulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -1061,7 +1089,7 @@ public class VPrincipal extends javax.swing.JFrame {
                 .addGroup(InvitadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(identificacionvisitante, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(telefonovisitante, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addGroup(InvitadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(NlabelPlaca4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Nlabeltipo9))
@@ -1107,8 +1135,6 @@ public class VPrincipal extends javax.swing.JFrame {
         Consulta.setBackground(new java.awt.Color(50, 68, 68));
         Consulta.setForeground(new java.awt.Color(60, 63, 65));
 
-        NLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/1200px-U._Cooperativa_de_Colombia_logo.svg_.png"))); // NOI18N
-
         Ntitulo.setBackground(new java.awt.Color(255, 255, 255));
         Ntitulo.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 36)); // NOI18N
         Ntitulo.setForeground(new java.awt.Color(255, 255, 255));
@@ -1117,7 +1143,7 @@ public class VPrincipal extends javax.swing.JFrame {
         NlabelPlaca.setBackground(new java.awt.Color(255, 255, 255));
         NlabelPlaca.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         NlabelPlaca.setForeground(new java.awt.Color(255, 255, 255));
-        NlabelPlaca.setText("Identificacion");
+        NlabelPlaca.setText("Identificación");
 
         Nbotonregistrar.setBackground(new java.awt.Color(0, 102, 102));
         Nbotonregistrar.setText("Cerrar Sesión");
@@ -1142,16 +1168,16 @@ public class VPrincipal extends javax.swing.JFrame {
             }
         });
 
+        NLogo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/onlinea.png"))); // NOI18N
+
+        NLogo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/1200px-U._Cooperativa_de_Colombia_logo.svg_.png"))); // NOI18N
+
         javax.swing.GroupLayout ConsultaLayout = new javax.swing.GroupLayout(Consulta);
         Consulta.setLayout(ConsultaLayout);
         ConsultaLayout.setHorizontalGroup(
             ConsultaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ConsultaLayout.createSequentialGroup()
-                .addGap(851, 851, 851)
-                .addComponent(NLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(655, 655, 655))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConsultaLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(767, 767, 767)
                 .addGroup(ConsultaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ConsultaLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -1163,13 +1189,22 @@ public class VPrincipal extends javax.swing.JFrame {
                                 .addComponent(NlabelPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(Ntitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(521, 521, 521))
+            .addGroup(ConsultaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(NLogo3)
+                .addContainerGap())
+            .addGroup(ConsultaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConsultaLayout.createSequentialGroup()
+                    .addContainerGap(871, Short.MAX_VALUE)
+                    .addComponent(NLogo5, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(635, 635, 635)))
         );
         ConsultaLayout.setVerticalGroup(
             ConsultaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConsultaLayout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addComponent(NLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addContainerGap()
+                .addComponent(NLogo3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 297, Short.MAX_VALUE)
                 .addComponent(Ntitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(NlabelPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1180,9 +1215,14 @@ public class VPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(Nbotonregistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(284, 284, 284))
+            .addGroup(ConsultaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ConsultaLayout.createSequentialGroup()
+                    .addGap(112, 112, 112)
+                    .addComponent(NLogo5, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(533, Short.MAX_VALUE)))
         );
 
-        Menu.setText("Menu");
+        Menu.setText("Menú");
 
         jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem4.setText("Salir");
@@ -1298,6 +1338,9 @@ public class VPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_Nbotonregistrar3ActionPerformed
 
     private void Nbotonregistrar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nbotonregistrar2ActionPerformed
+       if(identificacionvisitante.getText().equals("") || nombre1visitante.getText().equals("") || nombre2visitante.getText().equals("") || apellido1visitante.getText().equals("") || apellido2visitante.getText().equals("") || telefonovisitante.getText().equals("") || correovisitante.getText().equals("") ){
+            JOptionPane.showMessageDialog(null, "Hay campos vacios!!");
+        }else { 
         String opcion = (String) opcion2.getSelectedItem();
         String[] parts = opcion.split(":");
         String part1 = parts[0];  
@@ -1305,9 +1348,10 @@ public class VPrincipal extends javax.swing.JFrame {
         control(identificacionvisitante.getText(), "100", part1);
         generarQR("UCC "+identificacionvisitante.getText()+" "+part1+ " "+tipo, identificacionvisitante.getText());
         correo(correovisitante.getText(), identificacionvisitante.getText());
-        JOptionPane.showMessageDialog(null, "Correo enviado y Qr generado con exito! " );
+        JOptionPane.showMessageDialog(null, "Correo enviado y Qr generado con éxito! " );
         Invitado.setVisible(false);
         Consulta.setVisible(true);
+       }
     }//GEN-LAST:event_Nbotonregistrar2ActionPerformed
 
     private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2ActionPerformed
@@ -1342,7 +1386,7 @@ public class VPrincipal extends javax.swing.JFrame {
             control(identificacion4.getText(), tipo, part1);
             generarQR("UCC "+identificacion4.getText()+" "+part1+ " "+tipo, identificacion4.getText());
             correo(Correo4.getText(), identificacion4.getText());
-            JOptionPane.showMessageDialog(null, "Correo enviado y Qr generado con exito! " );
+            JOptionPane.showMessageDialog(null, "Correo enviado y Qr generado con éxito! " );
             Invitado2.setVisible(false);
             Consulta.setVisible(true);
             
@@ -1460,12 +1504,16 @@ public class VPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel Invitado;
     private javax.swing.JPanel Invitado2;
     private javax.swing.JMenu Menu;
-    private javax.swing.JLabel NLogo;
     private javax.swing.JLabel NLogo1;
     private javax.swing.JLabel NLogo14;
     private javax.swing.JLabel NLogo15;
     private javax.swing.JLabel NLogo2;
+    private javax.swing.JLabel NLogo3;
     private javax.swing.JLabel NLogo4;
+    private javax.swing.JLabel NLogo5;
+    private javax.swing.JLabel NLogo6;
+    private javax.swing.JLabel NLogo7;
+    private javax.swing.JLabel NLogo8;
     private javax.swing.JButton Nbotonregistrar;
     private javax.swing.JButton Nbotonregistrar1;
     private javax.swing.JButton Nbotonregistrar2;
