@@ -18,7 +18,7 @@ public class Conexion {
     public Connection conexion(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conectar=(Connection) DriverManager.getConnection("jdbc:mysql://datos.mysql.database.azure.com/control","datos@datos","Marlon12345");
+            conectar=(Connection) DriverManager.getConnection("jdbc:mysql://datodat.mysql.database.azure.com/control","datodat@datodat","marlonJAJA2");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error de conexion! "+e.getMessage());
         }
