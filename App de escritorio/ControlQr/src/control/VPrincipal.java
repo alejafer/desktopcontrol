@@ -1147,7 +1147,7 @@ public class VPrincipal extends javax.swing.JFrame {
         ConsultaLayout.setHorizontalGroup(
             ConsultaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConsultaLayout.createSequentialGroup()
-                .addContainerGap(659, Short.MAX_VALUE)
+                .addGap(660, 660, 660)
                 .addGroup(ConsultaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ConsultaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(ConsultaLayout.createSequentialGroup()
@@ -1179,7 +1179,7 @@ public class VPrincipal extends javax.swing.JFrame {
                 .addComponent(Nbotonregistrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Nbotonregistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(383, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         Menu.setText("Menú");
